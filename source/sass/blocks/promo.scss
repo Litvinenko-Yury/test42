@@ -1,0 +1,29 @@
+.promo {
+  display: flex;
+  justify-content: center;
+  min-height: 500px;
+  padding-top: 60px;
+  padding-bottom: 360px;
+  font-size: 24px;
+  background-color: #ffe4c3;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 270px;
+    padding-bottom: 250px;
+
+    font-size: 60px;
+    line-height: $line-height-auto;
+  }
+}
+
+.promo__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.promo__item {
+  outline: 1px dotted darkviolet;
+
+  text-align: center;
+}

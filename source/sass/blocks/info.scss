@@ -1,0 +1,42 @@
+.info {
+  position: relative;
+  min-height: 350px;
+  padding: 400px 20px 65px 20px;
+  background-color: #343a40;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 180px;
+  }
+}
+
+.info__container-img {
+  outline: 2px dotted orange;
+
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  height: 400px;
+  width: 90%;
+
+  @media (min-width: $desktop-width) {
+    top: 50%;
+    left: auto;
+    right: 170px;
+    transform: translateY(-50%);
+
+    height: 530px;
+    width: 660px;
+  }
+}
+
+.info__wrap-inner {
+  outline: 1px dotted orange;
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}

@@ -1,0 +1,70 @@
+.main-nav {
+  outline: 1px dotted red;
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
+}
+
+.main-nav .burger {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  outline: 1px dotted green;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  width: 100%;
+
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: auto;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &--js {
+    /*уменьшение высоты меню*/
+    @media (max-width: $desktop-width - 1) {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height $transition-time--show;
+    }
+  }
+
+  &--show {
+    /*увеличение высоты меню*/
+    @media (max-width: $desktop-width - 1) {
+      max-height: 500px;
+      overflow: hidden;
+      transition: max-height $transition-time--show * 2;
+    }
+  }
+}
+
+.main-nav__link {
+  display: block;
+  padding: 0.5em 1em;
+
+  border: 1px solid blue;
+  background-color: cornflowerblue;
+
+  @media (min-width: $desktop-width) {
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background-color: coral;
+  }
+}

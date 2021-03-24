@@ -1,6 +1,6 @@
-import glitch from './modules/glitch';
+import mainNav from './modules/main-nav';
 
 
 window.addEventListener('DOMContentLoaded', () => {
-  glitch();
+  mainNav();
 });

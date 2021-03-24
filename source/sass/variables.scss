@@ -2,7 +2,7 @@
 /*Typography*/
 /*Font, line-height, headings.*/
 //=============================
-$font-family: "Open Sans",  "Arial", sans-serif;
+$font-family: "Open Sans", "Arial", sans-serif;
 
 //$font-size-h1: px;
 //$font-size-h2: px;
@@ -15,12 +15,12 @@ $font-family: "Open Sans",  "Arial", sans-serif;
 //$font-size--x-large: px;
 //$font-size--large: px;
 //$font-size--larger: px;
-//$font-size: px;
+$font-size: 16px;
 //$font-size--smaller: px;
 //$font-size--small: px;
 
-//$line-height: em;
-//$line-height-auto: 1.2em;
+$line-height: 1.5em;
+$line-height-auto: 1.2em;
 
 //================
 /*Gray and brand colors*/
@@ -29,7 +29,7 @@ $font-family: "Open Sans",  "Arial", sans-serif;
 //$color-main--lightest: ;
 //$color-main--lighten: ;
 //$color-main--light: ;
-//$color-main: #283645;
+$color-main: #000000;
 //$color-main--dark: ;
 //$color-main--darken: ;
 //$color-main--darkest: ;
@@ -52,8 +52,7 @@ $font-family: "Open Sans",  "Arial", sans-serif;
 //$gray--darkenest: ;
 //$gray--darkest: ;
 
-//$text-color: ; // Global text color on <body>;
-
+$text-color: #000000; // Global text color on <body>;
 
 //=============================
 //===Components===
@@ -64,7 +63,6 @@ $font-family: "Open Sans",  "Arial", sans-serif;
 //$padding-base-horizontal: px;
 
 //$border-radius-base: px;
-
 
 //=============================
 //===Links====
@@ -80,7 +78,6 @@ $font-family: "Open Sans",  "Arial", sans-serif;
 //$link-bg--focus: ;
 //$link-bg--active: ; //активная ссылка
 //$link-bg--down: ; //клик на ссылку
-
 
 //=============================
 //===Buttons===
@@ -107,7 +104,6 @@ $font-family: "Open Sans",  "Arial", sans-serif;
 //$btn-bg--hover: ;
 //$btn-bg--active: ;
 
-
 //$btn-border-radius-base: px;
 
 //$btn-border-color-base: ;
@@ -124,7 +120,6 @@ $font-family: "Open Sans",  "Arial", sans-serif;
 //$slider-toggle--hover: ;
 //$slider-toggle--down: ;
 
-
 //=============================
 //===Media queries breakpoints===
 //=============================
@@ -135,7 +130,7 @@ $font-family: "Open Sans",  "Arial", sans-serif;
 //$screen-xl:                   1200px;
 
 //$tablet-width: 660px;
-//$desktop-width: 960px;
+$desktop-width: 960px;
 
 //=============================
 //===Retina queries breakpoints===
@@ -146,5 +141,6 @@ $font-family: "Open Sans",  "Arial", sans-serif;
 //=============================
 //===Animate===
 //=============================
-//$transition-time ;
+$transition-time: 0.15s;
 //$transition-time-burger: 0.15s ;
+$transition-time--show: 0.25s;

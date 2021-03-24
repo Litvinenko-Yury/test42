@@ -5,9 +5,13 @@
 //@import "blocks/mixins.scss";
 //===
 // импорт остальных блоков
+@import "blocks/banner.scss";
+@import "blocks/basket.scss";
 @import "blocks/btn.scss";
+@import "blocks/intro.scss";
 @import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
+@import "blocks/menu-main.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-main.scss";

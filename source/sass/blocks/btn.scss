@@ -1,0 +1,35 @@
+.btn {
+  outline: 1px dotted darkviolet;
+
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  //padding: $btn-padding-vertical $btn-padding-horizontal;
+  white-space: nowrap;
+  user-select: none;
+  font-family: inherit;
+  font-size: 1em;
+  line-height: $line-height;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  text-transform: none;
+  color: #ffffff;
+  //background-color: $gray--light;
+  background-image: none;
+  //border-radius: $btn-border-radius-base;
+  // border: 1px solid $gray-lighter;
+  border: 0;
+  cursor: pointer;
+
+  &--search {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.intro {
+  background-color: #d7baba;
+
+  min-height: 150px;
+  padding: 280px 20px 80px 20px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 0;
+    padding-top: 280px;
+    padding-right: 60px;
+    padding-bottom: 320px;
+  }
+}
+
+.intro__wrap {
+  outline: 2px dotted darkviolet;
+
+  @media (min-width: $desktop-width) {
+    width: 520px;
+  }
+}

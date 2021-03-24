@@ -1,0 +1,59 @@
+.use {
+  padding-top: 60px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding: 60px 20px 50px 20px;
+
+  background-color: #909090;
+
+  @media (min-width: $desktop-width) {
+    padding: 120px 170px 110px 170px;
+  }
+}
+
+.use__title {
+  margin-bottom: 30px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.use__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.use__item {
+  position: relative;
+
+  padding-top: 100px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    background-color: dodgerblue;
+    // background-image: url("../img/rastr/icon-yes.png");
+    // background-image: url("../img/vector/icon-yes.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

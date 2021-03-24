@@ -1,0 +1,17 @@
+.rating {
+  display: flex;
+  justify-content: center;
+
+  background-color: darkred;
+}
+
+.rating__list {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.rating__item {
+  outline: 1px dotted yellow;
+}

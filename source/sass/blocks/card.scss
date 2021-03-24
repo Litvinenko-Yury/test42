@@ -1,0 +1,52 @@
+.card {
+  background-color: palegoldenrod;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 500px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.card__container-img {
+  outline: 2px dotted orange;
+  min-height: 400px;
+
+  background-color: palevioletred;
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
+}
+
+.card__body {
+  order: -1;
+
+  padding-top: 80px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    width: 50%;
+    padding-top: 200px;
+    padding-bottom: 130px;
+    padding-left: 60px;
+  }
+}
+
+.card__body-wrap {
+  outline: 2px dotted darkred;
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
+  }
+}
+
+.card__price-wrap {
+  display: flex;
+  justify-content: center;
+}

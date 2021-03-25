@@ -1,0 +1,25 @@
+.link-list {
+  width: 800px;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+
+  background-color: cadetblue;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.link-list__item {
+  outline: 2px dotted firebrick;
+
+  width: 140px;
+  height: 85px;
+  display: inline-block;
+
+  @media (min-width: $desktop-width) {
+    height: 160px;
+    flex-basis: 20%;
+  }
+}

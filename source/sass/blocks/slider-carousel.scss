@@ -1,0 +1,80 @@
+.slider-carousel {
+  position: relative;
+  margin: 0 auto;
+
+  padding-top: 130px;
+  background-color: #707070;
+}
+
+/*===============*/
+.slider-carousel__title {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  text-align: center;
+}
+
+/*===============*/
+/*кнопки prev-next*/
+.slider-carousel__btn-prev,
+.slider-carousel__btn-next {
+  position: absolute;
+  top: 20%;
+  left: 15px;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  background-color: transparent;
+  background-color: green;
+  cursor: pointer;
+
+  & > svg {
+    fill: #ffffff;
+  }
+
+  &:hover > svg {
+    fill: coral;
+    background-color: coral;
+  }
+
+  &:active > svg {
+    fill: blue;
+  }
+}
+
+.slider-carousel__btn-next {
+  left: auto;
+  right: 15px;
+}
+
+/*===============*/
+.slider-carousel__window {
+  // это "окошко", через которое будем смотреть на отдельный слайд
+  width: 100%;
+  min-height: 565px;
+
+  border: 5px solid red;
+
+  overflow: hidden;
+}
+
+.slider-carousel__container {
+  //'это длинный контейнер со слайдами
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.slider-carousel__item {
+  width: 800px;
+}

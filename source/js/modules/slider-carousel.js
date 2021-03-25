@@ -15,7 +15,6 @@ function sliderCarousel() {
   function setSliderFunctionality() {
     sliderCarouselAll.forEach(item => {
       let slidesWindow = item.querySelector('.slider-carousel__window'), // это "окошко", через которое будем смотреть на отдельный слайд
-
         widthWindowTemp = window.getComputedStyle(slidesWindow).width, //сейчас здесь хранится строка.
         widthWindow = +widthWindowTemp.slice(0, widthWindowTemp.length - 2), // а здесь теперь число
         slidesContainer = item.querySelector('.slider-carousel__container'), //длинный контейнер со слайдами
@@ -77,26 +76,21 @@ function sliderCarousel() {
         let slideWidth = 0;
 
         if (widthWindow <= 500) {
-          console.log('if <500');
           slides.forEach(item => {
             item.style.width = `${widthWindow}px`; // задать всем слайдам одинаковую ширину - т.е. ширину контейнера
           });
           slideWidth = widthWindow; // эта переменная будет нужна далее, для вычисления ширины slidesContainer
-          console.log(`slideWidth = ${slideWidth}`);
         } else if (widthWindow > 500 && widthWindow <= 800) {
-          console.log('500 > if <=800');
           slides.forEach(item => {
             item.style.width = `500px`; // задать всем слайдам одинаковую ширину
           });
           slideWidth = 500; // эта переменная будет нужна далее, для вычисления ширины slidesContainer
-          console.log(`slideWidth = ${slideWidth}`);
+
         } else {
-          console.log('if >800');
           slides.forEach(item => {
             item.style.width = `800px`; // задать всем слайдам одинаковую ширину
           });
           slideWidth = 800; // эта переменная будет нужна далее, для вычисления ширины slidesContainer
-          console.log(`slideWidth = ${slideWidth}`);
         }
 
         return slideWidth;
@@ -106,7 +100,6 @@ function sliderCarousel() {
         /**установить начальное (среднее) положение slidesContainer*/
         const offsetStart = (slidesContainerWidth / 2) - (widthWindow / 2);
         const offset = offsetStart;
-        console.log(`offset: ${offsetStart}`);
         slidesContainer.style.transform = `translateX(-${offsetStart}px)`; //смещение на величину offsetStart
 
         return offset;
